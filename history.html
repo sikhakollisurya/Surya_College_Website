@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>History - Your Institution</title>
+</head>
+
+<body>
+    <!-- Include the shared header (navigation bar) -->
+
+    <div id="navbar-container"></div>
+
+    <!-- History Page Content -->
+    <main class="content">
+        <div class="container">
+            <h1>A Legacy of Learning: The 50-Year History of Surya Educational Institutions</h1>
+            <h3>Introduction (1960s-1970s):</h3>
+            <img src="images/initial_days.jpg" alt="Initial days image" style="height: 300px;">
+            <p>Founded in the early 1960s by visionary educators and community leaders.
+                Initially started as a small school with a handful of students.
+                The institution's commitment to quality education laid the foundation for its growth.</p>
+            <h3>Expansion and Excellence (1980s-1990s):</h3>
+            <img src="images/construction.jpeg" alt="construction image" style="height: 300px;">
+            <p>In the 1980s, Surya Educational Institutions expanded its offerings to include higher education programs.
+                Achieved accreditation and recognition for its commitment to academic excellence.
+                Developed a reputation for producing top-performing students in various fields.</p>
+            <h3>Technological Advancements (2000s-2010s):</h3>
+            <img src="images/modern.jpeg" alt="modern image" style="width: 300px;">
+            <p>Embraced technology and modern teaching methods.
+                Established state-of-the-art facilities and laboratories.
+                Implemented e-learning platforms to enhance student engagement.
+                Strengthened ties with industry partners for practical training and internships.</p>
+
+            <h3>Community Engagement (2010s-Present):</h3>
+            <img src="images/community.jpeg" alt="modern image" style="width: 300px;">
+
+            <p>
+                Launched community outreach programs, including scholarships and skill development initiatives.
+                Actively involved in social and environmental causes.
+                Encouraged students to participate in volunteer work and community service.
+            </p>
+            <h3>Notable Alumni and Achievements:</h3>
+            <img src="images/alumni1.jpg" alt="modern image" style="width: 300px;">
+            <img src="images/alumni2.jpg" alt="modern image" style="height: 300px;">
+
+            <p>
+                Highlighted the achievements of alumni who have made significant contributions to various fields.
+                Mentioned academic and research achievements.
+                Recognized alumni who have excelled in leadership, entrepreneurship, and social impact.
+            </p>
+            <h3>Celebrating Milestones:</h3>
+            <img src="images/milestone.jpeg" alt="modern image" style="height: 300px;">
+
+            <p>
+                Marked key anniversaries and achievements with grand celebrations and events.
+                Showcased the institution's growth and development over the years.
+            </p>
+            <h3>Vision for the Future:</h3>
+            <img src="images/vision.jpg" alt="modern image" style="width: 300px;">
+
+            <p>
+                Outlined the institution's future goals and aspirations.
+                Emphasized its commitment to adapting to changing educational landscapes.
+                Expressed the desire to continue fostering excellence and innovation.
+            </p>
+        </div>
+    </main>
+
+    <!--footer-->
+    <div id="footer-container"></div>
+
+    <script>
+        // Load the navigation bar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

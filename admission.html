@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admission - Your Institution</title>
+</head>
+
+<body>
+    <!-- Include the shared header (navigation bar) -->
+    <div id="navbar-container"></div>
+
+    <!-- Admission Page Content -->
+    <main class="content">
+        <div class="container">
+            <h1>Admission Process at Surya Educational Institutions</h1>
+
+            <h2>Engineering and Medical Programs</h2>
+            <p>Surya Educational Institutions offer a wide range of undergraduate and postgraduate programs in
+                engineering and medical fields. Admission to these programs is highly competitive and follows a rigorous
+                selection process:</p>
+
+            <img src="images/admission1.jpg" alt="modern image" style="width: 300px;">
+            <img src="images/admission2.avif" alt="modern image" style="width: 300px;">
+
+
+            <h3>Undergraduate Admissions</h3>
+            <p>To secure admission to our undergraduate programs in engineering and medical disciplines, prospective
+                students must:</p>
+            <ul>
+                <li>Successfully complete their secondary education (e.g., high school) with outstanding academic
+                    performance.</li>
+                <li>Appear for relevant entrance examinations, such as engineering entrance exams or medical entrance
+                    exams, and achieve competitive scores.</li>
+                <li>Participate in a comprehensive counseling process that considers academic achievements, test scores,
+                    and personal interviews.</li>
+                <li>Submit required documents, including academic transcripts, recommendation letters, and a personal
+                    statement.</li>
+            </ul>
+
+            <h3>Postgraduate Admissions</h3>
+            <p>For postgraduate programs in engineering and medical fields, applicants should:</p>
+            <ul>
+                <li>Hold a relevant bachelor's degree with a strong academic record.</li>
+                <li>Clear the required entrance exams for their chosen specialization.</li>
+                <li>Participate in interviews or assessments specific to their field of study.</li>
+                <li>Submit academic transcripts, letters of recommendation, and a statement of purpose.</li>
+            </ul>
+
+            <h2>Encouragement of Sports and Fine Arts</h2>
+            <p>At Surya Educational Institutions, we believe in nurturing well-rounded individuals who excel not only
+                academically but also in sports and fine arts. Our admission process for sports and fine arts programs
+                is inclusive and supportive:</p>
+
+                <img src="images/sports1.webp" alt="modern image" style="width: 300px;">
+                <img src="images/finearts.png" alt="modern image" style="width: 300px;">
+
+
+            <h3>Sports Scholarships</h3>
+            <p>We offer scholarships to talented athletes who demonstrate exceptional skills in various sports
+                disciplines:</p>
+            <ul>
+                <li>Prospective sports scholars are evaluated based on their sports achievements, performance records,
+                    and potential for further development.</li>
+                <li>Applicants may need to provide videos or attend tryout sessions to showcase their abilities.</li>
+                <li>Selected sports scholars benefit from financial support and dedicated training facilities.</li>
+            </ul>
+
+            <h3>Fine Arts and Cultural Programs</h3>
+            <p>Our institution welcomes students with a passion for fine arts and cultural pursuits:</p>
+            <ul>
+                <li>Applicants interested in fine arts, music, dance, or other cultural fields are encouraged to submit
+                    portfolios or audition videos showcasing their talents.</li>
+                <li>A review committee assesses these submissions and selects candidates who exhibit exceptional
+                    artistic potential.</li>
+                <li>Admitted students have access to specialized training, artistic mentorship, and opportunities to
+                    showcase their talents.</li>
+            </ul>
+
+            <p>We are committed to fostering a diverse and inclusive community of learners, where academic excellence,
+                sportsmanship, and artistic creativity flourish. Our admission process reflects this commitment,
+                ensuring that students with varied interests and talents find their place at Surya Educational
+                Institutions.</p>
+        </div>
+    </main>
+
+    <!-- Include the shared footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Load the navigation bar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>

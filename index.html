@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sikhakolli_Surya_College_Site</title>
+</head>
+<body>
+    
+    <!-- Navigation Bar -->
+    
+    <div id="navbar-container"></div>
+
+    <!-- Home Page Content -->
+    
+    <header class="hero">
+        <div class="container">
+            <h1>BOW to your Teacher,</h1>
+            <h2>only then, you will become the ARROW of the future.</h2>
+            <img src="images/arrow-bowandarrow.gif" alt="bow and arrow animation" style="height:300px" class="centre">
+            <p>"SURYA EDUCATIONAL INSTITUTIONS" is a renowned educational organization committed to providing high-quality learning experiences and academic excellence.</p>
+            <p>With a rich history of educational excellence, Surya Educational Institutions are dedicated to nurturing the intellectual, social, and personal development of students.</p>
+            <p>The institution offers a diverse range of programs and courses designed to equip students with the knowledge, skills, and values necessary for success in their chosen fields.</p>
+            <p>Led by a team of experienced educators and supported by state-of-the-art facilities, Surya Educational Institutions are known for fostering a dynamic learning environment that encourages critical thinking, creativity, and holistic growth.</p>
+            <p>With a strong emphasis on research, innovation, and community engagement, the institution plays a pivotal role in shaping the leaders and professionals of tomorrow.</p>
+        </div>
+    </header>
+
+    <!-- Footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Load the navigation bar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+
+</body>
+</html>

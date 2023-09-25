@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Leadership - Your Institution</title>
+</head>
+
+<body>
+    <!-- Include the shared header (navigation bar) -->
+
+    <div id="navbar-container"></div>
+
+    <!-- Leadership Page Content -->
+    <main class="content">
+        <div class="container">
+            <h1>Leadership at Surya Educational Institutions</h1>
+
+            <h2>Founder and Visionary</h2>
+            <img src="images/leader.jpg" alt="surya image" style="width: 300px;">
+
+            <p>The institution's journey began with the vision of its founder, Sikhakolli Surya, who recognized the
+                importance of quality education in shaping the future of students and the community. Surya's
+                dedication to providing accessible and holistic education laid the cornerstone of Surya Educational
+                Institutions.</p>
+
+            <h2>Board of Directors</h2>
+            <p>Surya Educational Institutions benefit from the guidance of a dynamic Board of Directors, composed of
+                experienced professionals, educators, and community leaders. The board's strategic oversight and
+                commitment to educational innovation have played a pivotal role in the institution's sustained growth.
+            </p>
+
+            <h2>Academic Leadership</h2>
+            <p>The academic leadership team, led by [Academic Leader's Name], has been instrumental in shaping the
+                institution's curriculum, research initiatives, and faculty development. Their commitment to academic
+                excellence has resulted in students achieving notable successes in both national and international
+                arenas.</p>
+
+            <h2>Administrative Leadership</h2>
+            <p>[Administrative Leader's Name], the institution's administrative head, has demonstrated exceptional
+                organizational skills and a dedication to ensuring the smooth operation of the institution. Under their
+                leadership, Surya Educational Institutions have consistently maintained high standards of efficiency and
+                professionalism.</p>
+
+            <h2>Faculty and Staff</h2>
+            <p>The heart of any educational institution lies in its faculty and staff members. Surya Educational
+                Institutions are fortunate to have a team of passionate educators and support staff who are committed to
+                nurturing students and providing them with a conducive learning environment.</p>
+
+            <h2>Alumni Contributions</h2>
+            <p>The institution's leadership extends beyond its campus through the achievements and contributions of its
+                alumni. Many alumni have gone on to become leaders in their respective fields, further enhancing the
+                institution's reputation.</p>
+
+            <h2>Community Engagement</h2>
+            <p>The institution's leadership places great importance on community engagement and social responsibility.
+                Initiatives led by the leadership team have strengthened the institution's ties with the local community
+                and promoted education as a catalyst for positive change.</p>
+
+        </div>
+    </main>
+
+    <!-- Include the shared footer -->
+    <div id="footer-container"></div>
+
+    <script>
+        // Load the navigation bar
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            });
+
+        // Load the footer
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer-container').innerHTML = data;
+            });
+    </script>
+</body>
+
+</html>
